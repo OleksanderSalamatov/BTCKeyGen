@@ -2,6 +2,7 @@ import hashlib
 import string
 import base58
 from math_utils.transform import toBinary
+from math_utils import base58
 
 #STEP 1
 seed = input(" Enter seed: ")
@@ -31,5 +32,5 @@ for i in range(8):
 print ("\n", "Private key: ", BTC_address)
 
 #STEP 6
-privkey_int = hex(int(BTC_address, 16))
-print ("\n" " Base58 privkey: ", base58.b58encode(privkey_int))
+privkey_int =  base58.encode(BTC_address)
+print ("\n" " Base58 privkey: ", privkey_int)
