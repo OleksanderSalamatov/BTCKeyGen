@@ -10,9 +10,9 @@ Ensure that you have python 3.5+
 
 -   Clone repo
 
--   Create venv:
+-   Create venv (python3 -m venv venv  ->  source venv/bin/activate)
 
--   Install requirements
+-   Install requirements (pip install -r requirements.txt)
 
 ## Usage
 
